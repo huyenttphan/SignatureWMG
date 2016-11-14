@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+//
+// ボタン・ホバー用スタイル
+//
+
+
+// --------------------------------------------------
+// マウスオーバー
+// --------------------------------------------------
+// 半透明エフェクト
+.hover-opacity {
+	&:hover {
+		@media(min-width:$screen-md-min){
+			@include opacity(0.8);
+		}
+	}
+}
+
+
+.hover-image-frame {
+	@extend .box-image-frame;
+	&:hover {
+		@media(min-width:$screen-md-min){
+			border: 1px solid #666;
+		}
+	}
+}
+
