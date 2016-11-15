@@ -1,0 +1,17 @@
+
+<script src="/assets/js/modernizr.min.js"></script>
+<!--jquery-->
+<script>
+	if(Modernizr.csstransitions){
+		document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"><\/script>');
+		window.jQuery || document.write('<script src="/assets/js/jquery-2.1.1.min.js"><\/script>');
+	}else{
+		document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"><\/script>');
+		window.jQuery || document.write('<script src="/assets/js/jquery-1.11.1.min.js"><\/script>');
+	}
+</script>
+<script src="/assets/js/common.js"></script>
+{{! use compare helper to custom include javascript }}
+
+{{! {{#compare fileName "==" "input"}}
+{{! {{/compare}}

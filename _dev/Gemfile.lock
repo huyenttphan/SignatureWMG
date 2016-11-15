@@ -10,6 +10,7 @@ GEM
     sass (3.2.14)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -17,4 +18,4 @@ DEPENDENCIES
   sass (= 3.2.14)
 
 BUNDLED WITH
-   1.11.2
+   1.12.5

@@ -24,6 +24,14 @@ module.exports = function(grunt) {
 				options:{
 					nospawn:true
 				}
+			},
+			html: {
+				files: [
+                    '_template/**/*.hbs',
+                    '_template/**/*.json',
+                    '_template/_z_docs/**/**/*.md'
+                    ],
+				tasks: ['newer:assemble', 'prettify:dist'],
 			}
 		},
 		//バラバラに記述されたメディアクエリをまとめるパッケージ
@@ -57,8 +65,77 @@ module.exports = function(grunt) {
 				dest: '../common/css/',
 				ext: '.min.css'
 			}
-		}
+		},
+		distHtmlPath: '../',
+		// assembleの設定
+		assemble: {
+			options: {
+				layoutdir: '_template/_base-layout',
+			},
+			dev: {
+				options: {
+					layout: 'default.hbs',
+					partials: '_template/_component/*.hbs',
+					data: '_template/_component/*.json',
+					flatten: false,
+					expand: true,
+				},
+				files: [
+					{
+						expand: true,
+						cwd: '_template/_page-layout/',
+						src: '**/*.hbs',
+						dest: '<%= distHtmlPath %>'
+					}
+				]
+			},
+			docs: {
+				options: {
+					layout: 'docs-layout.hbs',
+					partials: '_template/_z_docs/md/*.md',
+					flatten: true,
+					helpers: 'handlebars-helper-md'
+				},
+				src: '_template/_z_docs/*.hbs',
+				dest: '<%= distHtmlPath %>/docs/'
+			}
+		},
+		// prettifyの設定
+		prettify: {
+      options: {
+        indent: 2,
+        indent_char: ' ',
+        brace_style: 'expand',
+        unformatted: ['a', 'code', 'pre']
+      },
+      dist: {
+        expand: true,
+        cwd: '<%= distHtmlPath %>',
+        ext: '.html',
+        src: ['*.html'],
+        dest: '<%= distHtmlPath %>'
+      }
+		},
+		// browserSyncの設定
 
+		browserSync: {
+			dev: {
+				bsFiles: {
+					src : ['../']
+				},
+				options: {
+					watchTask: true,
+					watchOptions: {
+						ignoreInitial: true
+					},
+					server: '../',
+					startPath: 'docs/',
+					notify: {
+					  styles: ['display: none','background-color: #1B2032']
+					}
+				}
+			}
+		}
 	});
 
 	//-----------------------------------------------------
@@ -74,6 +151,7 @@ module.exports = function(grunt) {
 	//-----------------------------------------------------
 	//grunt実行タスク（gruntコマンドで起動）
 	//-----------------------------------------------------
+	grunt.registerTask('dev', ['assemble','browserSync','watch']);
 	grunt.registerTask('default', ['watch:sass']);
 
 	//-----------------------------------------------------

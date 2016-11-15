@@ -1,0 +1,56 @@
+---
+title: "title"
+keywords: "keywords"
+description: "description"
+ogTitle: "title"
+ogDescription: "description"
+ogType: "website"
+ogUrl: "ogUrl"
+ogSite_name: "ogSite_name"
+ogImage: "ogImage"
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>{{title}}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="keywords" content="{{keywords}}">
+	<meta name="description" content="{{description}}">
+	<meta property="og:title" content="{{ogTitle}}">
+	<meta property="og:description" content="{{ogDescription}}">
+	<meta property="og:type" content="{{ogType}}">
+	<meta property="og:url" content="{{ogUrl}}">
+	<meta property="og:site_name" content="{{ogSite_name}}">
+	<meta property="og:image" content="{{ogImage}}">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/share/meta/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/assets/img/share/meta/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/assets/img/share/meta/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/assets/img/share/meta/manifest.json">
+	<link rel="mask-icon" href="/assets/img/share/meta/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+
+	{{> css}}
+
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body id="" class="is-{{page}}">
+  <!-- ///// SITE HEADER ///// -->
+  {{> header }}
+  <!-- /.l-site-header -->
+  <!-- ///// END SITE HEADER ///// -->
+  <!-- ///// SITE MAIN CONTENTS ///// -->
+  {{> body }}
+  <!-- ///// END SITE MAIN CONTENTS ///// -->
+  <!-- ///// SITE FOOTER ///// -->
+  {{> footer }}
+  <!-- ///// END SITE FOOTER ///// -->
+  {{> javascript}}
+</body>
+</html>
