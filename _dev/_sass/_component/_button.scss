@@ -9,7 +9,7 @@
 // ○○○
 // --------------------------------------------------
 
-.button{
+.see-more{
   min-width:380px;
   height: 85px;
   padding-left:10px;
@@ -17,7 +17,9 @@
   text-decoration:none;
   color:#fff;
   display:inline-block;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #333333;
+  border: 2px solid #fff;
+  box-sizing:border-box;
   text-align:center;
   font-size:18px;
   line-height:80px;
@@ -26,12 +28,13 @@
   position:relative;
   overflow:hidden;
   z-index:1;
+  cursor:pointer;
 
   &:before{
     content:"";
     display:block;
     position:absolute;
-    background-color:rgba(0,0,0,1);
+    background-color:#080808;
     width: 380px;
     height: 85px;
     z-index: 0;
@@ -45,12 +48,11 @@
     position: absolute;
 		left: 50%;
 		top: 50%;
-    transform: translateY(-50%) translateX(-50%)
+    transform: translateY(-50%) translateX(-50%);
   }
 
   &:hover:before{
-    left:-188px;
-
+    left:-195px;
   }
 }
 
@@ -65,12 +67,12 @@
     border-left: 1px solid #fff;
     transform: rotateZ(135deg);
     top: 33px;
-    left: 350px;
+    left: 340px;
 }
-.button:hover{
+.see-more:hover{
 
       .arrow{
        transition:.3s;
-      left:360px;
+      left:350px;
     }
 }
