@@ -76,7 +76,10 @@ module.exports = function(grunt) {
 				options: {
 					layout: 'default.hbs',
 					partials: '_template/_component/*.hbs',
-					data: '_template/_component/*.json',
+					data: [
+                        '_template/_component/*.json',
+                        '_template/_page-layout/*.json'
+                    ],
 					flatten: false,
 					expand: true,
 				},
