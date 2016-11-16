@@ -60,19 +60,19 @@
     display: inline-block;
     position:absolute;
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     color: #000;
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
     transform: rotateZ(135deg);
     top: 33px;
-    left: 340px;
+    left: 330px;
 }
 .see-more:hover{
 
       .arrow{
        transition:.3s;
-      left:350px;
+      left:340px;
     }
 }
