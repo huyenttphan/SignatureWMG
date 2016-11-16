@@ -1,0 +1,44 @@
+<div class="navigation-container">
+    
+    <div class="navigation-body">
+        <div class="navigation-left">
+            <h1 class="logo">
+                <img src="https://s12.postimg.org/aqrxw93j1/logo.png" alt="" />
+            </h1>
+        </div>
+        <div class="navigation-right hiddenNav">
+            <div class="navi-right-col">
+                <div class="col-left">
+                    <ul class="navigation">
+                        {{#each navigation.navigation-item}}
+                        <li class="navigation-item">
+                            <a href="{{link}}" class="navigation-link">{{name}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <ul class="navigation-bottom">
+                        <li>
+                            <a href="#">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="#">プライバシーポリシー</a>
+                        </li>
+                        <li>
+                            <a href="#">推奨環境について</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-right">
+                    <h3 class="nv-right-heading">pickup</h3>
+                    {{> slider}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-control">
+        <button class="open-navigation"><span></span></button>
+        <button class="close-navigation"><span></span></button>
+    </div>
+    <div id="navigation-box">
+    </div>
+</div>
