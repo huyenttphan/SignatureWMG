@@ -19,16 +19,16 @@
 
         .navigation-body{
             background: #333;
+            z-index: 5;
         }
         .open-navigation{
             z-index: -1;
         }
         .close-navigation{
             @include opacity(1);
-            z-index:1;
+            z-index:5;
         }
         .logo{
-            padding-top: 30px;
             max-width: 90px;
             @media (min-width:$screen-md-min){
                 max-width:250px;
@@ -40,8 +40,8 @@
     }
 }
 .logo{
-    max-width:135px;
-    padding-top:50px;
+    max-width:115px;
+    margin-top:25px;
     @include transition(0.2s);
     @media (min-width:$screen-md-min){
         max-width:250px;
@@ -52,7 +52,7 @@
 }
 .navigation-control{
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     top:15px;
     left:15px;
     @media (min-width:$screen-md-min){
