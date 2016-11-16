@@ -1,0 +1,273 @@
+
+#navigation-box{
+    transform: rotate(-45deg);
+    background:#333333;
+    position:absolute;
+    color:#fff;
+
+}
+.navigation-container{
+    width:100%;
+    position: relative;
+
+    &.showNav {
+        #navigation-box{
+            left:0!important;
+            width:100%!important;
+            height:100%!important;
+        }
+
+        .navigation-body{
+            background: #333;
+        }
+        .open-navigation{
+            z-index: -1;
+        }
+        .close-navigation{
+            @include opacity(1);
+            z-index:1;
+        }
+        .logo{
+            padding-top: 30px;
+            max-width: 90px;
+            @media (min-width:$screen-md-min){
+                max-width:250px;
+                padding-top:0;
+            }
+
+        }
+        
+    }
+}
+.logo{
+    max-width:135px;
+    padding-top:50px;
+    @include transition(0.2s);
+    @media (min-width:$screen-md-min){
+        max-width:250px;
+        padding-top:0;
+        margin-top:-162px;
+    }
+    img{max-width: 100%;}
+}
+.navigation-control{
+    position: absolute;
+    z-index: 2;
+    top:15px;
+    left:15px;
+    @media (min-width:$screen-md-min){
+        top:25px;
+        left:25px;
+    }
+
+    .open-navigation{
+        background:none;
+        border:none;
+        width:50px;
+        height:50px;
+        padding: 0 10px;
+        position: absolute;
+        @include transition(0.2s);
+        cursor: pointer;
+
+        span{
+            height: 1px;
+            width: 30px;
+            background: #fff;
+            display: block;
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            &:after,&:before{
+                height: 1px;
+                width: 30px;
+                background: #fff;
+                display: block;
+                content: '';
+                position:absolute;
+                top:9px;
+            }
+            &:before{
+             top: -9px;
+            }
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .close-navigation{
+        background:none;
+        border:none;
+        width:50px;
+        height:50px;
+        padding: 0 10px;
+        background:#333;
+        position: absolute;
+        z-index: -1;
+        @include opacity(0);
+        cursor: pointer;
+
+        span{
+            height: 1px;
+            width: 30px;
+            display: block;
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            &:after,&:before{
+                height: 1px;
+                width: 30px;
+                background: #fff;
+                display: block;
+                content: '';
+                position:absolute;
+                top:0px;
+                @include transform(rotate(45deg));
+            }
+            &:before{
+             @include transform(rotate(135deg));
+            }
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+    }
+}
+.navigation-body{
+    left:0;
+    position:absolute;
+    z-index:2;
+    top:0;
+    right:0;
+    left:0;
+    width:100%;
+    padding:55px 25px;
+
+    @media (min-width:$screen-lg-min){
+        padding: 136px 10px 136px 150px;
+        max-width: 1650px;
+    }
+
+    @media (min-width:$screen-md-min){
+        display: table;
+        padding: 150px 60px 150px 10px;
+        table-layout: fixed;
+    }
+
+    .navigation-left{
+        float:left;
+        width: 50%;
+
+        @media (min-width:$screen-md-min){
+            display: table-cell;
+            vertical-align: middle;
+            width: 25%;
+            float:none;
+        }
+    }
+    .navigation-right{
+        
+        @media (min-width:$screen-md-min){
+            display: table-cell;
+            vertical-align: middle;
+        }
+        &.hiddenNav{
+            visibility: hidden;
+            z-index: -1;
+            position: relative;
+        }
+        .navi-right-col{
+            
+            @media (min-width:$screen-md-min){
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+            .col-left {
+                width:50%;
+                float:right;
+                @media (min-width:$screen-md-min){
+                    display: table-cell;
+                    vertical-align: top;
+                    width: 34%;
+                    float: none;
+                    padding-top: 24px;
+                }
+            }
+            .col-right{
+                width: 100%;
+                clear: both;
+                padding-top:30px;
+
+                @media (min-width:$screen-md-min){
+                    display: table-cell;
+                    vertical-align: middle;
+                    width:66%;
+                    padding-top:0;
+                    max-width: 495px;
+                    padding:0 37px;
+                }
+
+                .nv-right-heading {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 12px;
+
+                    @media(min-width:$screen-md-min){
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .navigation{
+        .navigation-item{
+            padding:15px 0;
+            @media (min-width:$screen-md-min){
+                padding:25px 0;
+            }
+
+            .navigation-link{
+                font-size: 25px;
+                color:#fff;
+                line-height: 0.64;
+                text-decoration: none;
+                font-family: 'Century Gothic';
+                text-transform: uppercase;
+                @media (min-width:$screen-lg-min){
+                    font-size: 50px;
+                }
+                @media (min-width:$screen-md-min){
+                    font-size: 30px;
+                }
+
+            }
+
+        }
+        
+    }
+    .navigation-bottom{
+        margin-top:40px;
+        
+        li{
+            margin-top:20px;
+             a{
+                font-size: 10px;
+                color:#fff;
+                text-decoration: none;
+
+                @media (min-width:$screen-md-min){
+                    font-size: 16px;
+                }
+            }
+        }
+       
+    }
+}
