@@ -1,0 +1,149 @@
+.clients{
+	display:block;
+	padding-top:8px;
+
+	@media (min-width:$screen-sm-min){
+		display:inline-block;
+	}
+	@media (min-width: $screen-lg-min){
+		padding-top:8px;
+		padding-bottom:8px;
+	}
+}
+.clients--third-width{
+	width:100%;
+	padding:8px 0px 8px;
+
+	@media (min-width:$screen-sm-min){
+		width:49.6%;
+		padding: 8px;
+	}
+
+	@media (min-width: $screen-lg-min){
+		width: 33%;
+
+		&:first-child{
+			padding-left:0;
+		}
+
+		&:nth-child(4){
+			padding-left:0;
+			padding-right:0;
+		}
+		&:nth-child(5){
+			padding-right:8px;
+		}
+		&:nth-child(6){
+			padding-left:8px;
+			padding-right:0!important;
+		}
+	}
+}
+.clients--two-thirds{
+	width:100%;
+	padding: 8px 0;
+
+	@media (min-width:$screen-sm-min){
+		width:49.6%;
+		padding: 8px;
+	}
+
+	@media (min-width: $screen-lg-min){
+		width:66.4%;
+		padding:8px 0 8px 8px;
+	}
+}
+.clients__image{
+	position:relative;
+	overflow:hidden;
+	height:300px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+
+	@media (min-width:$screen-xs-min){
+
+		&:hover{
+			.clients__body{
+				bottom:0px;
+				transition: ease-in .3s;
+			}
+		}
+	}
+}
+.clients__overlay{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.6));
+}
+.clients__body{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	padding:30px;
+	@media (min-width:$screen-sm-min){
+		bottom:-76px;
+	}
+}
+.clients__body--dark{
+	background-color:#222;
+}
+.clients__title{
+	font-size:1.25em;
+	letter-spacing: 1px;
+	line-height:1.5;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#fff;
+	width:100%;
+}
+.clients__info{
+	display:none;
+	margin-top:20px;
+	font-size:13px;
+	color:#fff;
+	font-family:$font-serif;
+	line-height:1.5em;
+	letter-spacing:.5px;
+
+	@media (min-width:$screen-sm-min){
+		display:block;
+	}
+}
+.clients__btn{
+	margin-top:10px;
+	font-size:12px;
+	color:#fff;
+	background-color:#000;
+	font-family:$font-sans-serif;
+	display:inline-block;
+	width:180px;
+	height:45px;
+	line-height:45px;
+	text-transform: uppercase;
+	padding-left:20px;
+	position:relative;
+	letter-spacing:1.5px;
+	font-weight:600;
+
+	&:hover{
+		color:#fff;
+	}
+
+	@media (min-width:$screen-sm-min){
+		border: 1px solid #fff;
+		background-color:transparent;
+		margin-top:30px;
+		&:hover{
+			color:#fff;
+			border-color:#000;
+			background:#000;
+			transition: all .3s;
+		}
+	}
+}

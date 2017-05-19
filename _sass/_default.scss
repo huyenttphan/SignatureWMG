@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+// ==================================================
+// HTMLタグの初期スタイル
+// ==================================================
+
+
+// --------------------------------------------------
+// 基本エレメントの再定義
+// --------------------------------------------------
+* {
+	@include box-sizing(border-box);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body{
+	font-family:$font-sans-serif;
+	background:#e0e0e0;
+	font-size: 14px;
+	min-width: 320px;
+	overflow-x: hidden;
+	@media(min-width:$screen-md-min) {
+		font-size: 16px;
+	}
+}
+
+img{
+	vertical-align: bottom;
+	max-width:100%;
+	width:100%;
+}
+
+a{
+	color: $link-color-main;
+	outline: none;
+	text-decoration:none;
+	&:hover{
+		text-decoration:none;
+	}
+	&:active, &:focus{
+		text-decoration: none;
+		outline: none;
+	}
+}
+
+.p {
+	line-height:1.75em;
+	padding-top:0.5em;
+	padding-bottom: 0.5em;
+	font-size: 14px;
+	@media(min-width:$screen-md-min) {
+		font-size: 16px;
+	}
+}
+
+.b,.strong,.em{font-weight: bold;}
+
+.u-clearfix{
+	&:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+}
+main{
+	background:#fff;
+	padding-bottom:70px;
+}
+
+.l-site-header, .l-site-footer{
+	max-width:1600px;
+	margin: 0 auto;
+}

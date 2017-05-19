@@ -1,0 +1,70 @@
+.scroll-top{
+	display:none;
+	right: 0;
+	bottom: 41px;
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	position:fixed;
+	z-index:99;
+	@media (min-width:$screen-sm-min){
+		right: 0;
+    	bottom: 0;
+		width:60px;
+		height:60px;
+	}
+	@media (min-width:$screen-md-min){
+		bottom: 34px;
+    	right: 20px;
+	}
+	@media (min-width:$screen-lg-min){
+		bottom: 34px;
+    	right: 40px;
+	}
+}
+.scroll{
+	background:#323334;
+	width:40px;
+	height:40px;
+	margin: 0;
+	cursor:pointer;
+	transition: 0.5s;
+	border:1px solid #6b6b6b;
+	@media (min-width:$screen-sm-min){
+
+		width:40px;
+		height:40px;
+	}
+
+}
+
+.arrows {
+	right: 14px;
+	height: 30px;
+	bottom:0;
+	position:absolute;
+	width: 12px;
+	transition:.3s all;
+
+  @media (min-width:$screen-sm-min){
+	   right: 23px;
+		height: 40px;
+
+  }
+  i{
+	  color:#fff;
+  }
+}
+
+.scroll-top:hover{
+	@media (min-width:$screen-md-min){
+		.arrows{
+			bottom:15px;
+		}
+	}
+
+}
+.testButton{
+	height:1500px;
+	background-color:#ddd;
+}

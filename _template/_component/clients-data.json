@@ -1,0 +1,44 @@
+[
+  {
+    "card-modifier":"two-thirds",
+    "image":"southern-company.jpg",
+    "background-modifier":"sc",
+    "title": "Southern Company Employees & Retirees",
+    "btn":"true",
+    "link":"/clients/southern-company/",
+    "text":""
+  },
+  {
+    "card-modifier":"third-width",
+    "image":"affluent-families.jpg",
+    "title":"Affluent Families",
+    "btn":"true",
+    "link":"/clients/affluent-families/",
+    "text":""
+  },
+  {
+    "card-modifier":"third-width",
+    "image":"professionals.jpg",
+    "title":"Business Professionals",
+    "btn":"true",
+    "link":"/clients/professionals/",
+    "text":""
+  },
+  {
+    "card-modifier":"third-width",
+    "image":"executives.jpg",
+    "body-modifier":"dark",
+    "title":"Corporate Executives",
+    "btn":"true",
+    "link":"/clients/executives/",
+    "text":""
+  },
+  {
+    "card-modifier":"third-width",
+    "image":"physicians.jpg",
+    "title":"Physicians and Medical Professionals",
+    "btn":"true",
+    "link":"/clients/physicians/",
+    "text":""
+  }
+]

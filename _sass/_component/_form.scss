@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+//
+// フォーム用スタイル
+//
+// クラス名：.form-input-xxx, .form-select, .form-textarea, .form-radio
+
+// --------------------------------------------------
+// ○○○
+// --------------------------------------------------
+.contact-form{
+	@include clearfix;
+
+	@media (min-width:$screen-lg-min){
+		border-right: 1px solid rgba(34,34,34,.1);
+	}
+}
+.form__item{
+	display:table;
+	margin-top:30px;
+}
+.form__title{
+	display:table-cell;
+	vertical-align:middle;
+	margin-bottom:0;
+	width:240px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: .05em;
+}
+.form__data{
+	display:table-cell;
+	margin-top:0;
+	width:410px;
+}
+.form__input, .form__textarea{
+	box-sizing:border-box;
+	outline:0;
+	width:100%;
+	border: 1px solid #e2e2e2;
+	@include appearance(none);
+	@include transition(border-color .3s ease 0s);
+	&:focus{
+		border:1px solid #222222;
+	}
+}
+.form__textarea{
+	padding:15px;
+}
+.form__input{
+	padding-left:15px;
+	height:34px;
+	line-height:34px;
+}
+.form__submit{
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1.4em;
+	text-align: center;
+	letter-spacing: .22em;
+	padding: 17px 40px;
+	color: #fff;
+	text-transform: uppercase;
+	float: none;
+	border: 0;
+	border-radius: 0;
+	background-color: #222;
+	outline: none;
+	display: block;
+	margin-top: 40px;
+	margin-left:auto;
+	margin-right:auto;
+	@include transition(.3s);
+	@media (min-width:$screen-md-min){
+		margin-left: 240px;
+
+		&:hover{
+			color:#949494;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+//
+// リスト用スタイル
+//
+// クラス名：.list-xxx
+
+// --------------------------------------------------
+// 基本リスト
+// --------------------------------------------------
+%list-basic {
+	li {
+		line-height: 1.5em;
+		padding-top: 5px;
+		@media(min-width:$screen-sm-min){
+			padding-top: 15px;
+		}
+	}
+}
+
+// 番号リスト
+.list-number {
+	@extend %list-basic;
+	counter-reset:number;
+	li {
+		&:before {
+			counter-increment:number;
+			content:counter(number)".";
+		}
+	}
+}
+
+// --------------------------------------------------
+// テーブルリスト
+// --------------------------------------------------
+.list-table {
+	display: table;
+	dt,dd,li {
+		display: table-cell;
+	}
+}
+
+// --------------------------------------------------
+// テーブルリスト　dl→table
+// --------------------------------------------------
+.list-dl-table {
+	@media(min-width:$screen-sm-min){
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+	.list {
+		@media(min-width:$screen-sm-min){
+			display: table-row;
+		}
+		.title {
+			@media(min-width:$screen-sm-min){
+				display: table-cell;
+			}
+		}
+		.detail {
+			@media(min-width:$screen-sm-min){
+				display: table-cell;
+			}
+		}
+	} //list
+} //list-dl-table
+

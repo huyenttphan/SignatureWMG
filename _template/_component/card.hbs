@@ -1,0 +1,19 @@
+{{#each this}}
+  <article class="card {{#if card-modifier}}card--{{card-modifier}}{{/if}}">
+    <div class="card__image {{#if background-modifier}}card__image--{{background-modifier}}{{/if}}" style="background-image: url('{{image}}');">
+      <span class="card__overlay"></span>
+
+      <div class="card__body {{#if body-modifier}}card__body--{{body-modifier}}{{/if}}">
+        <h3 class="card__title">{{title}}</h3>
+        <p class="card__info">{{info}}</p>
+        {{#compare btn "==" "true"}}
+          <a class="card__btn" href="{{link}}">Learn More<span class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.4 10.93"><defs><style>.cls-1,.cls-2{stroke:#fff;fill:#fff;stroke-miterlimit:10;}.cls-1{stroke-width:2px;}</style></defs><title>Arrow</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" y1="5.47" x2="17.67" y2="5.47"/><polygon class="cls-2" points="18.16 9.97 18.16 0.97 24.53 5.47 18.16 9.97"/></g></g></svg></span></a>
+        {{/compare}}
+      </div>
+
+      {{#if text}}
+      <p class="card__content {{#if content-modifier}}card__content--{{content-modifier}}{{/if}}">{{text}}</p>
+      {{/if}}
+    </div>
+  </article>
+{{/each}}

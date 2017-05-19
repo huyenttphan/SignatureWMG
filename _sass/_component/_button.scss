@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+//
+// ボタン用スタイル
+//
+// クラス名：.button-xxx
+
+// --------------------------------------------------
+// ○○○
+// --------------------------------------------------
+.btn__arrow{
+	position:absolute;
+	bottom:38px;
+	right:20px;
+	width:20px;
+	height:5px;
+	@include transition(.3s);
+}

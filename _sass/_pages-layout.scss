@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+// ==================================================
+// 共通ページレイアウト
+// ==================================================
+
+
+// --------------------------------------------------
+// インポート
+// --------------------------------------------------
+// 各ページごとのスタイルを読み込む
+@import "_pages-layout/page-top";
+@import "_pages-layout/page-team";
+@import "_pages-layout/page-resources";
+@import "_pages-layout/page-why-us";
+@import "_pages-layout/page-contact";
+@import "_pages-layout/page-clients";
+@import "_pages-layout/page-client-login";

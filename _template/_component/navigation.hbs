@@ -1,0 +1,19 @@
+<nav class="site-navigation">
+  <div class="navigation__mobile u-clearfix">
+    <button class="navigation__mobile-button" id="js-mobile-button">
+      <span class="navigation__button-text">Menu</span>
+      <span class="navigation__hamburger"></span>
+    </button>
+  </div>
+  <div class="navigation__wrap" id="js-mobile-menu">
+    <ul class="navigation__items" id="js-mobile-nav">
+      {{#each this}}
+        {{>navigation-item}}
+      {{/each}}
+
+      <li class="navigation__item navigation__item--login">
+        <a class="navigation__link navigation__link--login" href="/client-login/"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>     Client Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,31 @@
+[
+  {
+    "category":"Signature Documentation:",
+    "resources-links": [
+      {"name":"Guide to your statements", "url":"https://www.raymondjames.com/wealth-management/why-a-raymond-james-advisor/client-resources/a-guide-to-your-statement"},
+      {"name":"Investor Access Tour", "url":"https://investoraccess.rjf.com/"}
+    ]
+  },
+
+  {
+    "category":"Tools:",
+    "resources-links": [
+      {"name":"Retirement Planning Calculator", "url":"https://www.raymondjames.com/wealth-management/advice-products-and-services/financial-and-retirement-planning/retirement-planning-calculator"}
+    ]
+  },
+
+  {
+    "category":"General Information:",
+    "resources-links": [
+      {"name":"Client Resources", "url":"https://www.raymondjames.com/wealth-management/why-a-raymond-james-advisor/client-resources"},
+      {"name":"Stock Quotes", "url":"https://www.raymondjames.com/wealth-management/why-a-raymond-james-advisor/client-resources/market-numbers/stock-and-equity-quote-look-up"},
+      {"name":"Cost Basis Reporting", "url":"https://www.raymondjames.com/wealth-management/why-a-raymond-james-advisor/client-resources/cost-basis-reporting"},
+      {"name":"Investment Taxation", "url":"https://www.raymondjames.com/wealth-management/why-a-raymond-james-advisor/client-resources/tax-reporting"},
+      {"name":"College Planning", "url":"https://www.raymondjames.com/wealth-management/advice-products-and-services/financial-and-retirement-planning/college-planning"},
+      {"name":"CFP Board Standards", "url":"http://www.cfp.net/about-cfp-board/about-cfp-board"},
+      {"name":"Economic Commentary", "url":"https://www.raymondjames.com/wealth-management/market-commentary-and-insights/economic-commentary"},
+      {"name":"Bond Market Commentary", "url":"https://www.raymondjames.com/wealth-management/market-commentary-and-insights/bond-market-commentary-and-analysis"},
+      {"name":"Glossary of Financial Terms", "url":"https://www.raymondjames.com/wealth-management/why-a-raymond-james-advisor/client-resources/glossary-of-terms"}
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+---
+title: "title"
+keywords: "keywords"
+description: "description"
+ogTitle: "title"
+ogDescription: "description"
+ogType: "website"
+ogUrl: "ogUrl"
+ogSite_name: "ogSite_name"
+ogImage: "ogImage"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{title}}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="keywords" content="{{keywords}}">
+	<meta name="description" content="{{description}}">
+	{{!--<meta property="og:title" content="{{ogTitle}}">
+	<meta property="og:description" content="{{ogDescription}}">
+	<meta property="og:type" content="{{ogType}}">
+	<meta property="og:url" content="{{ogUrl}}">
+	<meta property="og:site_name" content="{{ogSite_name}}">
+	<meta property="og:image" content="{{ogImage}}">--}}
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
+	<link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+	<link rel="manifest" href="/assets/img/share/meta/manifest.json">
+	<link rel="mask-icon" href="/assets/img/share/meta/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+
+	{{> site-css}}
+
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body class="is-{{fileName}} h-overflow-hidden">
+  <!-- ///// SITE HEADER ///// -->
+  {{#compare fileName "!=" "schwab"}}
+  	{{> header }}
+  {{/compare}}
+  <!-- ///// END SITE HEADER ///// -->
+
+  <!-- ///// SITE MAIN CONTENTS ///// -->
+  {{> body }}
+  <!-- ///// END SITE MAIN CONTENTS ///// -->
+
+  <!-- ///// SITE FOOTER ///// -->
+  {{#compare fileName "!=" "schwab"}}
+  	{{> footer }}
+  {{/compare}}
+  <!-- ///// END SITE FOOTER ///// -->
+
+
+  {{> loading}}
+
+  {{> site-javascript}}
+</body>
+</html>

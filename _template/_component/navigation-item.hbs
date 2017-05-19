@@ -1,0 +1,15 @@
+<li class="navigation__item">
+  <a class="navigation__link nav-{{page}}" href="{{url}}">{{name}}</a>
+
+  {{#compare dropdown "==" "true"}}
+      <ul class="navigation__dropdown">
+
+        {{#each this.dropdown-items}}
+        <li class="navigation__subitem">
+          <a class="navigation__sub-link" href="{{link}}">{{name}}</a>
+        </li>
+        {{/each}}
+
+      </ul>
+  {{/compare}}
+</li>

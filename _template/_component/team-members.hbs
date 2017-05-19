@@ -1,0 +1,37 @@
+<ul class="members">
+  {{#each this}}
+  <li class="member col-sm-6 col-md-4">
+    <a href="javascript:void(0)" data-remodal-target="{{id}}" class="member__link">
+      <figure class="member__detail">
+        <div class="member__pic">
+          <img class="member__img" src="/common/images/pages/team/{{pic}}.jpg" alt="{{name}}">
+          <span class="member__overlay"></span>
+        </div>
+        <figcaption class="member__info">
+          <h4 class="member__name">{{name}}</h4>
+          <small class="member__position">{{position}}</small>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  {{/each}}
+</ul>
+
+{{#each this}}
+<div class="remodal member__modal" data-remodal-id="{{id}}">
+  <button data-remodal-action="close" class="remodal-close" id="modal__close"></button>
+  <figure class="modal__panel">
+    <div class="modal__pic">
+      <img src="/common/images/pages/team/{{pic}}.jpg" alt="{{name}}">
+    </div>
+    <figcaption class="modal__details">
+      <h4 class="modal__name">{{name}}</h4>
+      <small class="modal__position">{{position}}</small>
+      <div class="modal__bio">
+        <p class="modal__para col-md-6">{{{para-1}}}</p>
+        <p class="modal__para col-md-6">{{para-2}}</p>
+      </div>
+    </figcaption>
+  </figure>
+</div>
+{{/each}}

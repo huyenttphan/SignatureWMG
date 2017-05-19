@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+//
+// ラッパー用スタイル
+//
+// クラス名：.wrap-xxx
+
+// --------------------------------------------------
+// ラッパー
+// --------------------------------------------------
+.wrap-xs{
+	max-width: $screen-xs-min;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wrap-sm{
+	max-width: $screen-sm-min;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wrap-md{
+	max-width: $screen-md-min;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wrap-lg{
+	max-width: $screen-lg-min;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// コンテンツ基本幅
+.wrap-content {
+	display: block;
+	width:1240px;
+	max-width:100%;
+	padding-left: 30px;
+   padding-right: 30px;
+	margin:0 auto;
+
+	@media (min-width:$screen-md-min){
+		padding-left:50px;
+		padding-right:50px;
+	}
+}
+
+.bg-grey{
+	background:#f3f3f3;
+	position:absolute;
+	top:auto;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:-1;
+	height:15%;
+	padding-bottom:70px;
+}

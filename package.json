@@ -1,0 +1,25 @@
+{
+  "name": "MarkupFormat",
+  "version": "1.3.0",
+  "description": "This is a nice format !",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kouji Iha",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-assemble": "^0.5.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-combine-media-queries": "~1.0.15",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-csscomb": "~2.0.1",
+    "grunt-newer": "^1.2.0",
+    "grunt-prettify": "^0.4.0",
+    "handlebars-helper-md": "^0.2.0"
+  }
+}

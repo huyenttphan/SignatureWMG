@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+//
+// トップページ用スタイル
+//
+
+	// .is-home{
+
+	// }
+.is-clients{
+	max-width:1600px;
+	margin:0 auto;
+}
+
+.l-clients-intro{
+	margin-top:70px;
+	@include clearfix;
+	position:relative;
+}
+.intro__text{
+	line-height:1.5em;
+	letter-spacing:0.02em;
+
+	&:nth-of-type(2){
+		margin-top:10px;
+	}
+	@media (min-width:$screen-md-min){
+		padding-left:20px!important;
+		padding-right:20px!important;
+
+		&:nth-of-type(2){
+			margin-top:0;
+		}
+	}
+}
+.intro__btn{
+	margin-top:20px;
+	text-transform: uppercase;
+	border-top: 1.5px solid;
+	border-bottom: 1.5px solid;
+	font-size: 10.5px;
+	letter-spacing: .22em;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-block;
+	background: transparent;
+	line-height: 22px;
+	padding: 13px 30px;
+	height: auto;
+	@include clearfix;
+}
+.intro__contact{
+	display:inline-block;
+	margin-top:30px;
+	position:relative;
+	@media (min-width:$screen-md-min){
+		margin-top:50px;
+
+		&:hover{
+			.contact__overlay{
+				opacity:1;
+			}
+			.contact__btn{
+				.btn__arrow{
+					right:15px;
+				}
+			}
+		}
+	}
+}
+.contact__overlay{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:20px;
+	background: rgba(34,34,34,.2);
+	opacity: 0;
+	@include transition(opacity .3s ease-in);
+}
+.contact__img{
+	@media (min-width:$screen-md-min){
+		margin-left:20px;
+		width:100%;
+		height:auto;
+	}
+}
+.contact__btn{
+	position:absolute;
+	text-transform: uppercase;
+	letter-spacing: .02em;
+	background:#fff;
+	color:#000;
+	font-weight:600;
+	font-size:13px;
+	bottom:10px;
+	left:10px;
+	padding: 13px 55px 12px 30px;
+	line-height: 22px;
+	@media (min-width:$screen-md-min){
+		bottom:50px;
+		left:80px;
+	}
+	.btn__arrow{
+		bottom: 28px;
+		right: 20px;
+		width: 21px;
+	}
+}
+.clients__list{
+	list-style:none;
+}
+.clients__link{
+	height: 230px;
+	padding-right: 10px!important;
+}
+
+.l-clients-groups{
+	margin-top:50px;
+	@include clearfix;
+}
