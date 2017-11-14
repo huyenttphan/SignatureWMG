@@ -1,0 +1,12 @@
+{{#each this}}
+  <div class="resources__columns col-md-4">
+    <h3 class="resources__category">{{category}}</h3>
+
+    <ul class="resources__links">
+      {{#each resources-links}}
+        <li class="resources__item"><a class="resources__link" href="{{url}}">{{name}}</a></li>
+      {{/each}}
+    </ul>
+
+  </div>
+{{/each}}

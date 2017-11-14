@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+//
+// ... style
+//
+// class name：.xyz-xxx
+
+// --------------------------------------------------
+// block comment
+// --------------------------------------------------
+
+// single comment
+.l-team-kv{
+	.hero-detail__wrap{
+		background: url('/common/images/pages/team/team_kv.jpg') no-repeat;
+		background-size: cover;
+		padding-bottom: 73%;
+		width: 100%;
+		position: relative;
+
+		@media (min-width:$screen-sm-min){
+			padding: 20% 10% 15%;
+			background-position:0;
+		}
+		@media (min-width:$screen-md-min){
+			padding-bottom: 10%;
+			background-position:0 -240px;
+			background-attachment: fixed;
+		}
+	}
+}
+
+.l-resources-kv{
+	.hero-detail__wrap{
+		background: url('/common/images/pages/resources/resources_kv.jpg') no-repeat;
+		background-size: cover;
+		padding-bottom: 73%;
+		width: 100%;
+		position: relative;
+
+		@media (min-width:$screen-sm-min){
+			padding: 20% 10% 15%;
+			background-position:0;
+		}
+		@media (min-width:$screen-md-min){
+			padding-bottom: 10%;
+			background-position:0 -60px;
+			background-attachment: fixed;
+		}
+	}
+}
+.l-clients-kv{
+	.hero-detail__wrap{
+		background: url('/common/images/pages/clients/clients_kv.jpg') no-repeat;
+		background-size: cover;
+		background-position:0 60px;
+		padding-bottom: 73%;
+		width: 100%;
+		position: relative;
+
+		@media (min-width:$screen-sm-min){
+			padding: 20% 10% 15%;
+			background-position:0 -35px;
+		}
+		@media (min-width:$screen-md-min){
+			padding-bottom: 10%;
+			background-position:0 -130px;
+			background-attachment: fixed;
+		}
+	}
+}
+.l-why-us-kv{
+	.hero-detail__wrap{
+		background: url('/common/images/pages/why-us/why-us_kv.jpg') no-repeat;
+		background-size: cover;
+		padding-bottom: 73%;
+		width: 100%;
+		position: relative;
+
+		@media (min-width:$screen-sm-min){
+			padding: 20% 10% 15%;
+			background-position:0;
+		}
+		@media (min-width:$screen-md-min){
+			padding-bottom: 10%;
+			background-position: 0 -175px;
+			background-attachment: fixed;
+		}
+	}
+}
+.l-contact-kv{
+	.hero-detail__wrap{
+		background: url('/common/images/pages/contact/contact_kv.jpg') no-repeat;
+		background-size: cover;
+		padding-bottom: 73%;
+		width: 100%;
+		position: relative;
+
+		@media (min-width:$screen-sm-min){
+			padding: 20% 10% 15%;
+			background-position:0;
+		}
+		@media (min-width:$screen-md-min){
+			padding-bottom: 10%;
+			background-position: 0;
+			background-attachment: fixed;
+		}
+	}
+}
+.l-login-kv{
+	.hero-detail__wrap{
+		background: url('/common/images/pages/client-login/client-login_kv.jpg') no-repeat;
+		background-size: cover;
+		padding-bottom: 73%;
+		width: 100%;
+		position: relative;
+
+		@media (min-width:$screen-sm-min){
+			padding: 20% 10% 15%;
+			background-position:0;
+		}
+		@media (min-width:$screen-md-min){
+			padding-bottom: 10%;
+			background-position: 0;
+			background-attachment: fixed;
+		}
+	}
+}
+.hero-detail__title{
+	position:absolute;
+	bottom: 20px;
+	left:30px;
+	font-family:$font-sans-serif;
+	text-transform:uppercase;
+	font-weight:600;
+	font-size: 2.3em;
+	letter-spacing: 1px;
+	color:#fff;
+	@media (min-width:$screen-md-min){
+		bottom: 40px;
+		left:40px;
+		font-size:3em;
+	}
+}

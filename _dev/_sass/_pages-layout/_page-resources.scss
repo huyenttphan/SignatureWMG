@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+//
+// トップページ用スタイル
+//
+
+	// .is-home{
+
+	// }
+.is-resources{
+	max-width:1600px;
+	margin:0 auto;
+}
+
+.l-resources-overview{
+	margin-top:70px;
+	@include clearfix;
+}
+.resources__text{
+	line-height: 1.5em;
+}
+.resources__details{
+	margin-top: 50px;
+	border: 1px solid rgba(#222222, 0.1);
+	@include box-shadow(0 0px 10px rgba(0, 0, 0, 0.1));
+}
+.resources__category{
+	padding:10px 10px 10px 30px;
+	color:#fff;
+	background:#222222;
+	text-transform: uppercase;
+	font-size: 1em;
+
+	@media (min-width:$screen-lg-min){
+		font-size: 1.2em;
+	}
+}
+
+.resources__links{
+	display:inline-block;
+	height: auto;
+	margin:20px 0;
+	padding-left: 30px;
+	border-left: 1px solid rgba(#222222, 0.1);
+	@media (min-width:$screen-md-min){
+		height:240px;
+	}
+}
+.resources__columns{
+	&:first-child{
+		.resources__links{
+			border-left:none;
+		}
+	}
+}
+.resources__item{
+	margin-top:10px;
+
+	&:last-child{
+		margin-bottom:10px;
+	}
+}
+a.resources__link{
+	position:relative;
+	padding-left: 20px;
+	text-decoration:underline;
+	@include transition(.3s);
+	&:before{
+		content:"";
+		position:absolute;
+		left:0;
+		top:8px;
+		width:5px;
+		height:5px;
+		background:#222222;
+	}
+	@media (min-width:$screen-md-min){
+		&:hover{
+			color:lighten(#222222, 30%);
+		}
+	}
+}

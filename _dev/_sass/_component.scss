@@ -8,24 +8,36 @@
 // インポート
 // --------------------------------------------------
 
-// @import '_component/_wrap';
+@import '_component/_wrap';
 // @import '_component/_box';
-// @import '_component/_form';
+@import '_component/_form';
 // @import '_component/_list';
 // @import '_component/_carousel';
-// @import '_component/_modal';
+@import '_component/_modal';
 @import '_component/_grid-gutter';
 // @import '_component/_icon';
-// @import '_component/_button';
+@import '_component/_button';
 // @import '_component/_hover';
 @import '_component/_colors';
 @import '_component/_border';
 @import '_component/_space';
 @import '_component/_scale';
 @import '_component/_view';
+
+@import '_component/_logo';
 @import '_component/_button';
 @import '_component/_footer';
 @import '_component/_navigation';
-@import '_component/_slider';
-@import '_component/_recruit';
+@import '_component/_heading';
 
+@import '_component/_hero-top';
+@import '_component/_hero-detail';
+@import '_component/_card';
+@import '_component/_scroll-top';
+@import '_component/_loading';
+@import '_component/_helpers';
+
+@import '_component/_team-members';
+@import '_component/_remodal';
+@import '_component/_accordion';
+@import '_component/_clients';

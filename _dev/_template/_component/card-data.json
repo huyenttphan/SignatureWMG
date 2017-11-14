@@ -1,0 +1,79 @@
+[
+  {
+    "card-modifier":"third-width",
+    "image":"none",
+    "background-modifier":"none",
+    "btn":"false",
+    "content-modifier":"blurb",
+    "text":"Bringing a Personal Touch to Each Financial Relationship"
+  },
+  {
+    "card-modifier":"two-thirds",
+    "image":"url('/common/images/pages/top/bg_intro.jpg')",
+    "content-modifier":"intro",
+    "text":"Here at Signature WMG, we are dedicated to providing you with comprehensive financial advice to help you achieve your goals. A signature is a binding symbol of trust, a promise of honesty and integrity, and it is our assurance that commitments will be upheld and seen through."
+  },
+  {
+    "card-modifier":"full-width",
+    "background-modifier":"sc",
+    "image":"url('/common/images/share/southern-company.jpg')",
+    "overlay":"true",
+    "title": "Southern Company Employees & Retirees",
+    "info":"For over 20 years our practice has been guiding members of the Southern Company network to and through their successful retirement.",
+    "btn":"true",
+    "link":"/clients/southern-company/",
+    "text":""
+  },
+  {
+    "card-modifier":"third-width",
+    "image":"url('/common/images/share/affluent-families.jpg')",
+    "overlay":"true",
+    "title":"Affluent Families",
+    "info":"Whether your family is saving for retirement, seeking retirement income, or passing wealth to future generations...",
+    "btn":"true",
+    "link":"/clients/affluent-families/",
+    "text":""
+  },
+  {
+    "card-modifier":"third-width",
+    "image":"url('/common/images/share/professionals.jpg')",
+    "overlay":"true",
+    "body-modifier":"dark",
+    "title":"Business Professionals",
+    "info":"Whether you need help with financial planning, investment management, 401-k set up, or establishing a trust...",
+    "btn":"true",
+    "link":"/clients/professionals/",
+    "text":""
+  },
+  {
+    "card-modifier":"third-width",
+    "image":"url('/common/images/share/executives.jpg')",
+    "overlay":"true",
+    "title":"Corporate Executives",
+    "info":"Through careful risk and return management, we provide robust solutions with proven results that our clients value. ",
+    "btn":"true",
+    "link":"/clients/executives/",
+    "text":""
+  },
+  {
+    "card-modifier":"third-width",
+    "image":"url('/common/images/share/physicians.jpg')",
+    "overlay":"true",
+    "body-modifier":"dark",
+    "title":"Physicians and Medical Professionals",
+    "info":"Our numerous tools, plans, and portfolios can be tailor made to fit your goals and risk tolerance so that you can enjoy peace of mind.",
+    "btn":"true",
+    "link":"/clients/physicians/",
+    "text":""
+  },
+  {
+    "card-modifier":"two-thirds",
+    "image":"url('/common/images/pages/top/top_bg_2.jpg')",
+    "overlay":"true",
+    "title":"Meet Our Team",
+    "info":"We’re with you every step of the way to keep you financially on track with your goals – including the evolution of career, family, community and life. To begin planning for a more confident and rewarding future, contact us today.",
+    "btn":"true",
+    "link":"/team/",
+    "text":""
+  }
+]

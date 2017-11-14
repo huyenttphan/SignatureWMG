@@ -10,10 +10,14 @@
 // --------------------------------------------------
 * {
 	@include box-sizing(border-box);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 }
 
 body{
-	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo, sans-serif;
+	font-family:$font-sans-serif;
+	background:#e0e0e0;
 	font-size: 14px;
 	min-width: 320px;
 	overflow-x: hidden;
@@ -24,19 +28,18 @@ body{
 
 img{
 	vertical-align: bottom;
+	max-width:100%;
+	width:100%;
 }
 
-.a{
+a{
 	color: $link-color-main;
 	outline: none;
+	text-decoration:none;
 	&:hover{
-		color: saturate($link-color-main, 80%);
-		.opacity-ov {
-			@include opacity(0.5);
-		}
+		text-decoration:none;
 	}
 	&:active, &:focus{
-		color: $link-color-main;
 		text-decoration: none;
 		outline: none;
 	}
@@ -54,12 +57,22 @@ img{
 
 .b,.strong,.em{font-weight: bold;}
 
-// テキスト反転カラー
-// ::selection {
-// 	background: $link-color-main;
-// 	color: #fff;
-// }
-// ::-moz-selection {
-// 	background: $link-color-main;
-// 	color: #fff;
-// }
+.u-clearfix{
+	&:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+}
+main{
+	background:#fff;
+	padding-bottom:70px;
+}
+
+.l-site-header, .l-site-footer{
+	max-width:1600px;
+	margin: 0 auto;
+}

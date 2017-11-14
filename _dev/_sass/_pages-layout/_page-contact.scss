@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+//
+// ... style
+//
+// class name：.xyz-xxx
+
+// --------------------------------------------------
+// block comment
+// --------------------------------------------------
+
+// single comment
+.is-contact{
+	max-width:1600px;
+	margin:0 auto;
+}
+.l-contact-intro{
+	margin-top:70px;
+	@include clearfix;
+}
+.contact-details{
+	margin-top: 50px;
+	text-align:center;
+	line-height:1.45;
+
+	@media (min-width:$screen-md-min){
+		margin-top: 30px;
+	}
+}
+.contact__heading{
+	text-transform:uppercase;
+	font-weight:600;
+	margin-top: 30px;
+	margin-bottom:5px;
+   display: block;
+}
+a.contact__email, a.contact__map{
+	//text-decoration:underline;
+	display:inline-block;
+	background:linear-gradient(gray,gray) no-repeat;
+	background-size:100% 1px;
+	background-position: 0 1.15em;
+	text-shadow: .05em 0 white, -.05em 0 white;
+	@include transition(.3s);
+
+	@media (min-width:$screen-md-min){
+		&:hover{
+			color:lighten(#222, 30%);
+		}
+	}
+}
+.l-contact-form{
+	margin-top:30px;
+}

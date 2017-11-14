@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+//
+// ... style
+//
+// class name：.xyz-xxx
+
+// --------------------------------------------------
+// block comment
+// --------------------------------------------------
+
+// single comment
+.accordion__group{
+	list-style:none;
+	padding:0;
+	margin:0;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.accordion__item{
+	border:1px solid rgba(34,34,34,.1);
+}
+.accordion__title{
+	text-transform:uppercase;
+	letter-spacing:1px;
+	line-height:1.5;
+	text-align:center;
+	color: #fff;
+   background: #222;
+	padding: 10px;
+}
+.accordion__text{
+	line-height:1.5;
+	padding: 20px;
+
+	@media (min-width:$screen-md-min){
+		padding:30px 50px;
+	}
+}

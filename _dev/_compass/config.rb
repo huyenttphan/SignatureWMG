@@ -20,6 +20,7 @@ line_comments = false
 # project again passing --syntax sass, or you can uncomment this:（Sassの記述方法）
 preferred_syntax = :scss
 
+cache = false
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
@@ -40,3 +41,5 @@ preferred_syntax = :scss
 #     end
 #   end
 # end
+
+sourcemap = true

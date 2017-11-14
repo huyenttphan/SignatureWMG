@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+//
+// トップページ用スタイル
+//
+
+	// .is-home{
+
+	// }
+.is-why-us{
+	max-width:1600px;
+	margin:0 auto;
+}
+
+.l-why-intro{
+	margin-top:70px;
+	@include clearfix;
+}
+.l-accordion{
+	margin-top:50px;
+}
+.details-text{
+	line-height:1.5;
+	margin-top:10px;
+}
+.l-why-strategies{
+	@include clearfix;
+}
+.strategies__text{
+	line-height:1.5em;
+	margin-top:20px;
+}
+a.strategies__link{
+	text-decoration:underline;
+	font-weight:600;
+	@include transition(.3s);
+
+	@media (min-width:$screen-md-min){
+		&:hover{
+			color:lighten(#222, 20%);
+		}
+	}
+}

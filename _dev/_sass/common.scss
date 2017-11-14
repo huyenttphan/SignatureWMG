@@ -38,7 +38,7 @@ $sprite-2x:sprite-map("sprite-2x/*.png", $spacing:1px, $position: 0, $layout: sm
 
 // color,border,background-color
 $color-array: #fff #000 #ccc;		//順番（番号）でクラス名を生成
-$link-color-main: #0000FF;	//リンクカラー
+$link-color-main: #222;	//リンクカラー
 
 // width,height
 $scale-px-array: 100 200 300 400 500 600 700 900;
@@ -60,6 +60,9 @@ $border-radius-array: 4 8 10;	//角丸
 // Bootstrap用グリッドシステムの余白
 $gutter-array: 10 15 20;
 
+
+$font-sans-serif: 'AvenirNext',　Avenir, Helvetica, Arial, sans-serif;
+$font-serif: 'Lora', serif;
 
 // --------------------------------------------------
 // HTMLリセット
