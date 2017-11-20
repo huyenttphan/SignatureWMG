@@ -240,7 +240,7 @@
    padding-right: 4px;
 }
 //////////////////////////
-/// Nav active item
+/// Nav active item on PC
 //////////////////////////
 .is-top{
 	.nav-top{
@@ -271,4 +271,39 @@
 	.nav-contact{
 		font-weight:700;
 	}
+}
+
+
+@media(min-width:$screen-md-min){
+
+.is-top{
+	.nav-top{
+		@include box-shadow(0px 3px 0px 0px #222 inset);
+	}
+}
+.is-team{
+	.nav-team{
+		@include box-shadow(0px 3px 0px 0px #222 inset);
+	}
+}
+.is-clients{
+	.nav-clients{
+		@include box-shadow(0px 3px 0px 0px #222 inset);
+	}
+}
+.is-why-us{
+	.nav-why-us{
+		@include box-shadow(0px 3px 0px 0px #222 inset);
+	}
+}
+.is-resources{
+	.nav-resources{
+		@include box-shadow(0px 3px 0px 0px #222 inset);
+	}
+}
+.is-contact{
+	.nav-contact{
+		@include box-shadow(0px 3px 0px 0px #222 inset);
+	}
+}
 }

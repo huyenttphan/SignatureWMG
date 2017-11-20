@@ -14,10 +14,7 @@
 		padding-top:16px!important;
 	}
 	&:nth-child(2){
-		padding-top:16px!important;
-	}
-	&:nth-child(7){
-		padding-bottom:16px!important;
+		padding-top:8px;
 	}
 	&:last-child{
 		padding-bottom:16px!important;
@@ -100,32 +97,49 @@
 	}
 }
 
-.card__image{
+.card__link{
 	position:relative;
+	display:block;
 	overflow:hidden;
-	height:400px;
+	height:320px;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
 
-	@media (min-width:$screen-xs-min){
-
+	@media (min-width:$screen-sm-min){
+		height:400px;
 		&:hover{
 			.card__body{
 				bottom:0px;
 				transition: ease-in .3s;
 			}
+			.card__overlay{
+				&:after{
+					opacity:1;
+				}
+			}
 		}
 	}
 }
-.card__image--sc{
+.card__link--sc{
 	background-position:center;
-
 	@media (min-width:$screen-lg-min){
-		background-position:0px -395px;
+		background-position: 0 -175px;
+	}
+	.card__overlay{
+		background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.3));
 	}
 }
-.card__image--none{
+.card__link--team{
+	background-position:center;
+	@media (min-width:$screen-lg-min){
+		background-position: 0 -45px;
+	}
+	.card__overlay{
+		background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.4));
+	}
+}
+.card__link--none{
 	background-color:#222;
 }
 .card__overlay{
@@ -135,6 +149,18 @@
 	right:0;
 	left:0;
 	background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.6));
+
+	&:after{
+		content:'';
+		position:absolute;
+		top:0;
+		bottom:0;
+		right:0;
+		left:0;
+		background:rgba(0,0,0,.3);
+		opacity:0;
+		@include transition(.3s);
+	}
 }
 .card__body{
 	position:absolute;
@@ -142,9 +168,10 @@
 	right:0;
 	bottom:0;
 	width:100%;
-	padding:30px;
+	padding: 20px 30px;
 	@media (min-width:$screen-sm-min){
 		bottom:-76px;
+		padding:30px;
 	}
 }
 .card__body--dark{
@@ -155,16 +182,16 @@
 	letter-spacing: 1px;
 	line-height:1.5;
 	text-transform:uppercase;
-	font-weight:bold;
+	font-weight:600;
 	color:#fff;
 	width:100%;
 }
 .card__info{
 	display:none;
 	margin-top:20px;
-	font-size:13px;
+	font-size:14px;
 	color:#fff;
-	font-family:$font-serif;
+	font-family:$font-sans-serif;
 	line-height:1.5em;
 	letter-spacing:.5px;
 
@@ -172,7 +199,7 @@
 		display:block;
 	}
 }
-a.card__btn{
+.card__btn{
 	margin-top:15px;
 	font-size:12px;
 	color:#fff;
@@ -187,6 +214,7 @@ a.card__btn{
 	position:relative;
 	letter-spacing:1.5px;
 	font-weight:600;
+	cursor: pointer;
 	&:hover{
 		color:#fff;
 	}
@@ -196,12 +224,12 @@ a.card__btn{
 		background-color:transparent;
 		width:180px;
 		height:45px;
+		transition: all .3s;
 
 		&:hover{
 			color:#fff;
 			border-color:#000;
 			background:#000;
-			transition: all .3s;
 		}
 	}
 }
@@ -212,7 +240,7 @@ a.card__btn{
 	color:#fff;
 }
 .card__content--blurb{
-	font-size:25px;
+	font-size:20px;
 	text-transform:uppercase;
 	bottom:30px;
 	left:30px;
@@ -220,6 +248,10 @@ a.card__btn{
 	line-height:1.5em;
 	letter-spacing: 0.02em;
 	font-weight:600;
+
+	@media (min-width:$screen-sm-min){
+		font-size:25px;
+	}
 }
 .card__content--intro{
 	font-size:16px;
@@ -231,10 +263,11 @@ a.card__btn{
 	padding:30px;
 	background:rgba(34,34,34,.8);
 	font-family:$font-sans-serif;
-
+	@media (min-width:$screen-sm-min){
+		font-size:18px;
+	}
 	@media (min-width:$screen-lg-min){
 		padding:50px;
 		width:50%;
-		font-size:20px;
 	}
 }

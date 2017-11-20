@@ -1,4 +1,5 @@
-
+{
+  "swmg":
     [
       {
         "id":"scott",
@@ -16,7 +17,7 @@
         "pic":"james",
         "url":"",
         "para-1":"With more than 22 years of experience as a financial advisor, Jim serves a diverse group of individuals wanting to partner with a trusted professional who can be a good steward of their life savings. Jim offers clients customized retirement income strategies that focus on delivering a stable and growing income stream from the dividends of stocks and the interest on bonds. Different from many other advisors, Jim does not rely on third party investment products. He manages his clients’ savings by building a portfolio of individual stocks and bonds. Clients value Jim’s ability to offer clients greater transparency and control over their investments at a lower cost.",
-        "para-2":"Jim joined Raymond James in 2008, after spending 14 years as an advisor with Merrill Lynch. It is a testament to Jim’s dedication, expertise and commitment to investment and financial planning that he is a CERTIFIED FINANCIAL PLANNER (CFP®) practitioner and has earned the Certified Investment Management Analyst (CIMA®) designation which signifies a high level of consulting expertise with asset allocation, ethics, due diligence, risk measurement, investment policy and performance measurement. Jim graduated from the University of Edinburgh with an MBA in International Business and from Wake Forest University with his B.A. in Business and German. Jim is proud of his service in the U.S. Army as an Air Defense and Intelligence Officer. He was an active member of Kennesaw UMC, serving as the chairman of the finance committee and as an acolyte coordinator. Jim and his wife, Jan, enjoy spending time with their daughter, Caroline. When he is not with clients, James likes to play the fiddle and go fly fishing."
+        "para-2":"Jim joined Raymond James in 2008, after spending 14 years as an advisor with Merrill Lynch. It is a testament to Jim’s dedication, expertise and commitment to investment and financial planning that he is a CERTIFIED FINANCIAL PLANNER (CFP®) practitioner. Jim graduated from the University of Edinburgh with an MBA in International Business and from Wake Forest University with his B.A. in Business and German. Jim is proud of his service in the U.S. Army as an Air Defense and Intelligence Officer. He was an active member of Kennesaw UMC, serving as the chairman of the finance committee and as an acolyte coordinator. Jim and his wife, Jan, enjoy spending time with their daughter, Caroline. When he is not with clients, James likes to play the fiddle and go fly fishing."
       },
       {
         "id":"donna",
@@ -30,7 +31,7 @@
       {
         "id":"denise",
         "name":"Denise Green",
-        "position":"Client Service and Planning Associate",
+        "position":"Client Service & Planning Associate",
         "pic":"denise",
         "url":"",
         "para-1":"Denise Green serves clients by building professional and personal relationships, providing strong client service, and helping them realize financial well-being. Denise Green is an outgoing person who is quick to solve problems, answer questions, provide solutions, and proactively communicate important information to clients. She has cultivated a strong understanding of client needs and possesses a breadth of knowledge that result in a first-class experience for clients. Denise believes clients appreciate her attention to detail and follow-up skills as well as her ability to listen to each client’s concerns and find a best solution for all.",
@@ -53,6 +54,28 @@
         "url":"",
         "para-1":"Stephen Brown is a financial planner that specializes in creating customized retirement plans for his diverse client base. Stephen obtained his undergraduate degree in Economics in 2007 from Hampden-Sydney College while volunteering and working part-time as an Emergency Medical Technician with Prince Edward County Volunteer Rescue Squad. During his time as an EMT, he developed a passion for serving others. After graduation, Stephen began his career with Ameriprise Financial. Before joining Signature Wealth Management Group in 2017, he spent nine years with SunTrust Investment Services, Inc.",
         "para-2":"To further serve his clients, Stephen has earned the Certified Financial Planner™ designation. This designation has expanded his knowledge in minimizing taxes, customizing portfolios, and tailoring financial plans to a client’s specific needs. Stephen and his wife, Caroline, enjoy getting outdoors with their daughter and spending time with their German Shorthaired Pointer, Pistol Pete. When not meeting clients, Stephen coaches lacrosse and cheers for his favorite football team, the Alabama Crimson Tide (Roll Tide!)."
+      },
+      {
+        "id":"brian-walker",
+        "name":"Brian Walker",
+        "position":"Operations Manager",
+        "pic":"brian_walker",
+        "url":"",
+        "para-1":"Brian Walker is a dedicated operations manager with over 20 years of experience in the financial services industry.  He prides himself on finding solutions to help advisors and support staff be successful and, in turn, assist their clients in reaching their financial goals.  He is responsible for operations, compliance, and HR functions at Signature Wealth Management Group.<span class='modal__break'></span>Brian has been both a financial advisor and operations manager during his career and has a deep understanding of both sides of the business.  He previously worked for Raymond James, Charles Schwab, and Ameriprise Financial.",
+        "para-2":"Brian graduated from Westfield State University with a bachelor’s degree in Finance.  Brian and his wife Ivona have twins and love supporting them in karate, cub scouts, and gymnastics.  Originally from Massachusetts, he is an avid Boston sports fan and enjoys watching the New England Patriots and Boston Red Sox.  In his spare time, when he gets the itch, he enjoys playing drums and guitar."
       }
+    ],
 
-    ]
+    "partners":
+      [
+        {
+          "id":"stephanie",
+          "name":"Stephanie Platt",
+          "position":"Trusted Service Partner",
+          "pic":"stephanie",
+          "url":"",
+          "para-1":"Stephanie Platt began her career in Financial Services in 1992 with Prudential Insurance where she obtained her Life Insurance licenses. She graduated in 1994 with a Bachelor of Business Administration in Finance and Economics. Shortly after graduation, she accepted a position at Dean Witter Reynolds, assisting several top producers with sales and marketing. In spring of 1995, she was recruited by Vestax Corporation, a small Broker/Dealer, where she headed up their product division concentrating on Mutual Funds and Variable Annuities.<span class='modal__break'></span>In March 1997, she was presented with the opportunity to help develop a new RIA Corporation that focused on specific money management strategies for registered representatives to use with their clients. Once the securities department was fully functional, she transitioned into the retirement plans area, helping to develop a group annuity platform through ING Reliastar for use with 401k and 401a plans.",
+          "para-2":"Stephanie went on to hold positions as a Regional Sales Manager of an insurance marketing organization as well as Director of Sales and Product Development for a mid-size Broker Dealer.  In April 2007, she started Financial Services Outsourcing Solutions, Inc. which specializes in assisting Registered Investment Advisors with their back-office operations and marketing. In 2017, Stephanie joined our team to enhance our client service. Stephanie lives in Ohio with her family."
+        }
+      ]
+}

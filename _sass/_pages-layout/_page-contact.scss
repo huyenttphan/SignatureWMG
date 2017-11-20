@@ -35,7 +35,12 @@
    display: block;
 }
 a.contact__email, a.contact__map{
-	text-decoration:underline;
+	//text-decoration:underline;
+	display:inline-block;
+	background:linear-gradient(gray,gray) no-repeat;
+	background-size:100% 1px;
+	background-position: 0 1.15em;
+	text-shadow: .05em 0 white, -.05em 0 white;
 	@include transition(.3s);
 
 	@media (min-width:$screen-md-min){

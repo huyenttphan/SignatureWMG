@@ -1,6 +1,7 @@
 [
   {
     "card-modifier":"third-width",
+    "image":"none",
     "background-modifier":"none",
     "btn":"false",
     "content-modifier":"blurb",
@@ -8,15 +9,15 @@
   },
   {
     "card-modifier":"two-thirds",
-    "image":"/common/images/pages/top/bg_intro.jpg",
-    "link": "#",
+    "image":"url('/common/images/pages/top/bg_intro.jpg')",
     "content-modifier":"intro",
-    "text":"A signature is as unique as the individual to which it belongs. It is a binding symbol of trust, a promise of honesty and integrity, an assurance that commitments will be upheld and seen through."
+    "text":"Here at Signature WMG, we are dedicated to providing you with comprehensive financial advice to help you achieve your goals. A signature is a binding symbol of trust, a promise of honesty and integrity, and it is our assurance that commitments will be upheld and seen through."
   },
   {
     "card-modifier":"full-width",
-    "image":"/common/images/share/southern-company.jpg",
     "background-modifier":"sc",
+    "image":"url('/common/images/share/southern-company.jpg')",
+    "overlay":"true",
     "title": "Southern Company Employees & Retirees",
     "info":"For over 20 years our practice has been guiding members of the Southern Company network to and through their successful retirement.",
     "btn":"true",
@@ -25,26 +26,29 @@
   },
   {
     "card-modifier":"third-width",
-    "image":"/common/images/share/affluent-families.jpg",
+    "image":"url('/common/images/share/affluent-families.jpg')",
+    "overlay":"true",
     "title":"Affluent Families",
-    "info":"Whether your family is saving for retirement, seeking retirement income, or passing wealth to future generations, we offer distinct solutions tailored to your needs and goals.",
+    "info":"Whether your family is saving for retirement, seeking retirement income, or passing wealth to future generations...",
     "btn":"true",
     "link":"/clients/affluent-families/",
     "text":""
   },
   {
     "card-modifier":"third-width",
-    "image":"/common/images/share/professionals.jpg",
+    "image":"url('/common/images/share/professionals.jpg')",
+    "overlay":"true",
     "body-modifier":"dark",
     "title":"Business Professionals",
-    "info":"Whether you need help with financial planning, investment management, 401-k set up, or establishing a trust, we have the solutions you need to achieve your financial goals.",
+    "info":"Whether you need help with financial planning, investment management, 401-k set up, or establishing a trust...",
     "btn":"true",
     "link":"/clients/professionals/",
     "text":""
   },
   {
     "card-modifier":"third-width",
-    "image":"/common/images/share/executives.jpg",
+    "image":"url('/common/images/share/executives.jpg')",
+    "overlay":"true",
     "title":"Corporate Executives",
     "info":"Through careful risk and return management, we provide robust solutions with proven results that our clients value. ",
     "btn":"true",
@@ -53,7 +57,9 @@
   },
   {
     "card-modifier":"third-width",
-    "image":"/common/images/share/physicians.jpg",
+    "image":"url('/common/images/share/physicians.jpg')",
+    "overlay":"true",
+    "body-modifier":"dark",
     "title":"Physicians and Medical Professionals",
     "info":"Our numerous tools, plans, and portfolios can be tailor made to fit your goals and risk tolerance so that you can enjoy peace of mind.",
     "btn":"true",
@@ -62,7 +68,9 @@
   },
   {
     "card-modifier":"two-thirds",
-    "image":"/common/images/pages/top/top_bg_2.jpg",
+    "background-modifier":"team",
+    "image":"url('/common/images/pages/top/team.jpg')",
+    "overlay":"true",
     "title":"Meet Our Team",
     "info":"We’re with you every step of the way to keep you financially on track with your goals – including the evolution of career, family, community and life. To begin planning for a more confident and rewarding future, contact us today.",
     "btn":"true",

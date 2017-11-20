@@ -11,6 +11,7 @@
 </script>
 <script src="/common/lib/TweenMax/TweenMax.min.js"></script>
 <script src="/common/lib/jquery.mb.YTPlayer.min.js"></script>
+<script src="https://use.fontawesome.com/5d96a1dda8.js"></script>
 <script src="/common/js/common.js"></script>
 
 <script>
@@ -21,5 +22,9 @@ if (touchsupport){ // browser doesn't support touch
 </script>
 
 {{#compare fileName "==" "team"}}
-  <script src="/common/lib/remodal/remodal.min.js"></script>
+<script src="/common/lib/remodal/remodal.min.js"></script>
+{{/compare}}
+
+{{#compare fileName "==" "contact"}}
+<script src="/common/js/form-validation.js"></script>
 {{/compare}}

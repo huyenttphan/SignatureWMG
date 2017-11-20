@@ -1,8 +1,8 @@
 ---
 fileName: "contact"
-title: "Contact | Signature Wealth Management Group"
-keywords: "Signature Wealth Management Group, Financial Advisors, Financial Planning, Mutual Funds, Retirement Plans, 401k, Affluent Families, Corporate Executives, Business Professionals, Southern Company Employees, Physicans, Medical Professionals"
-description: "Signature Wealth Management Group - A Personal Commitment To Your Financial Future"
+title: "Wealth Management Group | Wealth Management Strategies"
+keywords: "signature wealth management group, wealth management group, financial advisors, financial planning"
+description: "Contact Signature Wealth Management Group - A Personal Commitment To Your Financial Future for wealth management advice."
 ---
 <main>
 
@@ -21,30 +21,30 @@ description: "Signature Wealth Management Group - A Personal Commitment To Your 
     </section>
 
     <section class="l-contact-form row">
-      <form class="contact-form col-md-8" method="post">
+      <form action="form_send.php" class="contact-form js-form col-md-8" method="post">
         <dl class="form__item">
           <dt class="form__title">
-            First Name:
+            First Name *:
           </dt>
           <dd class="form__data">
-            <input class="form__input" name="first-name" type="text" placeholder="">
+            <input class="form__input js-validate" name="first_name" type="text" placeholder="" required>
           </dd>
         </dl>
 
         <dl class="form__item">
           <dt class="form__title">
-            Last Name:
+            Last Name *:
           </dt>
           <dd class="form__data">
-            <input class="form__input" name="last-name" type="text" placeholder="">
+            <input class="form__input js-validate" name="last_name" type="text" placeholder="" required>
           </dd>
         </dl>
         <dl class="form__item">
           <dt class="form__title">
-            Email Address:
+            Email Address *:
           </dt>
           <dd class="form__data">
-            <input class="form__input" name="last-name" type="text" placeholder="">
+            <input class="form__input js-validate" name="email" type="email" placeholder="" required>
           </dd>
         </dl>
         <dl class="form__item">
@@ -52,7 +52,7 @@ description: "Signature Wealth Management Group - A Personal Commitment To Your 
             Company Name:
           </dt>
           <dd class="form__data">
-            <input class="form__input" name="last-name" type="text" placeholder="">
+            <input class="form__input" name="company" type="text" placeholder="">
           </dd>
         </dl>
         <dl class="form__item">
@@ -60,15 +60,15 @@ description: "Signature Wealth Management Group - A Personal Commitment To Your 
             Contact Number:
           </dt>
           <dd class="form__data">
-            <input class="form__input" name="last-name" type="text" placeholder="">
+            <input class="form__input" name="telephone" type="text" placeholder="">
           </dd>
         </dl>
         <dl class="form__item">
           <dt class="form__title">
-            Your Message:
+            Your Message *:
           </dt>
           <dd class="form__data">
-            <textarea name="content" id="content" class="form__textarea" cols="50" rows="10"></textarea>
+            <textarea name="comments" id="content" class="form__textarea js-validate" cols="50" rows="10" required></textarea>
           </dd>
         </dl>
 

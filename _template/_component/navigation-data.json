@@ -1,47 +1,47 @@
 [
    {
-        "name":"About Us",
+        "name":"Home",
         "url":"/",
         "page":"top"
     },
     {
         "name":"Our Team",
-        "url":"/team",
+        "url":"/team/",
         "page":"team"
     },
     {
         "name":"Whom We Serve",
-        "url":"/clients",
+        "url":"/clients/",
         "page":"clients",
         "dropdown":"true",
         "dropdown-items":
           [
-            { "name":"Southern Company Employees","link":"/clients/southern-company"},
-            { "name":"Affluent Families","link":"/clients/affluent-families"},
-            { "name":"Business Professionals","link":"/clients/professionals"},
-            { "name":"Corporate Executives","link":"/clients/executives"},
-            { "name":"Physicians and Medical Professionals","link":"/clients/physicians"}
+            { "name":"Southern Company Employees","link":"/clients/southern-company/"},
+            { "name":"Affluent Families","link":"/clients/affluent-families/"},
+            { "name":"Business Professionals","link":"/clients/professionals/"},
+            { "name":"Corporate Executives","link":"/clients/executives/"},
+            { "name":"Physicians and Medical Professionals","link":"/clients/physicians/"}
           ]
     },
     {
         "name":"Why Us",
-        "url":"/why-us",
+        "url":"/why-us/",
         "page":"why-us",
         "dropdown":"true",
         "dropdown-items":
           [
-            { "name":"The Signature Equity Income Series","link":"/why-us/equity-income"},
-            { "name":"The Signature Mutual Fund Series","link":"/why-us/mutual-fund"}
+            { "name":"The Signature Equity Income Series","link":"/why-us/equity-income/"},
+            { "name":"The Signature Mutual Fund Series","link":"/why-us/mutual-fund/"}
           ]
     },
     {
         "name":"Resources",
-        "url":"/resources",
+        "url":"/resources/",
         "page":"resources"
     },
     {
         "name":"Contact Us",
-        "url":"/contact",
+        "url":"/contact/",
         "page":"contact"
     }
 ]

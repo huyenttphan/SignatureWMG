@@ -33,20 +33,21 @@
 	display: block;
 	width:100%;
 	background-color:rgba(255,255,255,1);
-	font-size: 1.5em;
-	letter-spacing:1px;
+	font-size: 1.2em;
+	letter-spacing:3px;
 	line-height: 1.5;
 	padding:10px 10px 10px 30px;
-	font-family: $font-headings;
+	text-transform: uppercase;
+	font-weight:500;
 
 	@media (min-width:$screen-md-min){
 		background-color:transparent;
-		font-size: 2.3em;
+		font-size: 2.1em;
 		text-align: right;
 		padding:0;
 	}
 	@media (min-width:$screen-lg-min){
-		font-size: 2.8em;
+		font-size: 2.5em;
 	}
 
 	span{
@@ -73,7 +74,7 @@
 	display:inline-block;
 	position:relative;
 
-	&:hover{
+	&:hover, &:active, &:visited{
 		color:#fff;
 	}
 

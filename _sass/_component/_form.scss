@@ -46,11 +46,15 @@
 }
 .form__textarea{
 	padding:15px;
+	font-size:14px;
+	font-family:$font-sans-serif;
 }
 .form__input{
-	padding-left:15px;
+	padding: 5px 15px 3px;
 	height:34px;
 	line-height:34px;
+	font-size:14px;
+	font-family:$font-sans-serif;
 }
 .form__submit{
 	font-size: 11px;
@@ -70,6 +74,7 @@
 	margin-top: 40px;
 	margin-left:auto;
 	margin-right:auto;
+	cursor:pointer;
 	@include transition(.3s);
 	@media (min-width:$screen-md-min){
 		margin-left: 240px;
@@ -78,4 +83,30 @@
 			color:#949494;
 		}
 	}
+}
+.is-valid{
+  border-color: #e2e2e2;
+  transition: 0;
+}
+.not-valid{
+  border-color: #ff8489;
+  transition: 0;
+}
+
+//-----------------------
+//FORM SENT SUCCESSFULLY
+//-----------------------
+.success-message{
+	line-height:1.5;
+	margin-top:30px;
+	@media (min-width:$screen-md-min){
+		margin-top: 60px;
+	}
+}
+.message__text{
+	margin-top:10px;
+}
+.message__phone{
+	font-weight:600;
+	text-decoration:underline;
 }

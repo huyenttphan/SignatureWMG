@@ -10,7 +10,13 @@
 // --------------------------------------------------
 
 // single comment
+.swmg{
+	margin-top:50px;
 
+	@media(min-width:$screen-md-min){
+		margin-top:80px;
+	}
+}
 .members{
 	display:block;
 	margin: 0 auto;
@@ -19,14 +25,22 @@
 
 	@media (min-width:$screen-md-min){
 		width: 1240px;
-		padding-left: 30px;
-		padding-right: 30px;
-		margin-top:50px;
 	}
 }
-
 .member{
-	margin-top:50px;
+	&:nth-child(n+2){
+		margin-top:50px;
+	}
+	@media(min-width:$screen-sm-min){
+		&:nth-child(2){
+			margin-top:0;
+		}
+	}
+	@media (min-width:$screen-md-min){
+		&:nth-child(3){
+			margin-top:0px;
+		}
+	}
 }
 .member__detail{
 	@media (min-width:$screen-sm-min){
@@ -34,7 +48,6 @@
 		padding-right:20px;
 	}
 }
-
 .member__pic{
 	max-width:100%;
 	position:relative;
@@ -51,6 +64,9 @@
 	@include transition(opacity .3s ease-in);
 }
 .member__link{
+	&:hover{
+		color:rgb(34,34,34);
+	}
 	@media (min-width:$screen-md-min){
 		&:hover{
 			.member__overlay{
@@ -82,4 +98,17 @@
 	padding-top:5px;
 	font-size:.8em;
 	letter-spacing:1px;
+	@media (min-width:$screen-md-min){
+		font-size:.64em;
+	}
+	@media (min-width:$screen-lg-min){
+		font-size:.8em;
+	}
+}
+
+.partners{
+	margin-top:50px;
+	@media (min-width:$screen-md-min){
+		margin-top:80px;
+	}
 }
