@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+//
+// トップページ用スタイル
+//
+
+	// .is-home{
+
+	// }
+.l-ingenius-intro{
+	margin-top: 70px;
+	@include clearfix;
+}
+.l-what{
+	margin-top:30px;
+}
+.char__item{
+	padding: 0 10px;
+}
+.char__box{
+	padding: 20px;
+	border: 1px solid #f3f3f3;
+	vertical-align: top;
+	@include border-radius(10px);
+	@include box-shadow(2px 2px 4px 0px rgba(0,0,0,0.05));
+	@include clearfix;
+	.desc{
+		line-height:1.4;
+	}
+}
+.l-signup{
+	margin-top:80px;
+}
+.signup__deets{
+	text-align:center;
+	padding: 20px;
+	.link{
+		font-size: 11px;
+		font-weight: 700;
+		line-height: 1.4em;
+		text-align: center;
+		letter-spacing: .22em;
+		padding: 17px 40px;
+		color: #fff;
+		text-transform: uppercase;
+		border:2px solid #fff;
+		background-color: #222;
+		display: inline-block;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		@include transition(.3s);
+
+		&:hover{
+			border:2px solid #222;
+			background-color:#fff;
+			color:#222;
+		}
+	}
+}
+.l-how{
+	margin-top:70px;
+	padding: 70px 0 100px;
+	background: #f5f4f3;
+	@include clearfix;
+}
+.how__item{
+	text-align:center;
+
+	.icon{
+		margin: 0 auto;
+		width:30%;
+	}
+	.heading{
+		padding: 40px 20px 0;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.tagline{
+		margin-top: 10px;
+		padding: 0 20px;
+	}
+}
+.l-faq{
+	margin-top: 80px;
+   padding-bottom: 30px;
+	@include clearfix;
+
+	.row--last{
+		margin-top:20px;
+	}
+}
+.faq__item{
+	padding: 0 10px;
+}
+.faq__box{
+	padding: 20px;
+	border: 1px solid #f3f3f3;
+	vertical-align: top;
+	@include border-radius(10px);
+	@include box-shadow(2px 2px 4px 0px rgba(0,0,0,0.05));
+	@include clearfix;
+
+	.question{
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.answer{
+		margin-top: 10px;
+		line-height:1.4;
+	}
+}
+
+a.text-link{
+	text-decoration:underline;
+	font-weight:600;
+	@include transition(.3s);
+
+	@media (min-width:$screen-md-min){
+		&:hover{
+			color:lighten(#222, 20%);
+		}
+	}
+}

@@ -130,6 +130,15 @@
 		background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.3));
 	}
 }
+.card__link--team{
+	background-position:center;
+	@media (min-width:$screen-lg-min){
+		background-position: 0 -45px;
+	}
+	.card__overlay{
+		background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.4));
+	}
+}
 .card__link--none{
 	background-color:#222;
 }

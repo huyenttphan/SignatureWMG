@@ -68,7 +68,8 @@
   },
   {
     "card-modifier":"two-thirds",
-    "image":"url('/common/images/pages/top/top_bg_2.jpg')",
+    "background-modifier":"team",
+    "image":"url('/common/images/pages/top/team.jpg')",
     "overlay":"true",
     "title":"Meet Our Team",
     "info":"We’re with you every step of the way to keep you financially on track with your goals – including the evolution of career, family, community and life. To begin planning for a more confident and rewarding future, contact us today.",
