@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+//
+// トップページ用スタイル
+//
+
+	// .is-home{
+
+	// }
+.l-ingenious-kv{
+	//padding-top: 70px;
+	.wrapper{
+		background: url('/common/images/pages/ingenious/ingenious_kv.jpg') no-repeat;
+		background-size: cover;
+		padding-bottom: 73%;
+		width: 100%;
+		position: relative;
+		@include display-flex;
+		@include justify-content(flex-end);
+
+		@media (min-width:$screen-sm-min){
+			padding: 20% 10% 15%;
+			background-position:0;
+		}
+		@media (min-width:$screen-md-min){
+			padding-bottom: 10%;
+			background-position: 0;
+		}
+	}
+	.body{
+		text-align:right;
+		margin-top: 200px;
+	}
+	.heading{
+		font-size: 3em;
+		font-style: italic;
+		padding-top: 10px;
+	}
+	.blurb-1{
+		font-style: italic;
+	}
+	.blurb-2{
+		margin-top: 20px;
+		font-size: 1.2em;
+		line-height: 1.5;
+		width: 380px;
+	}
+}
+///
+.l-header-ingenious{
+	@include display-flex;
+	@include justify-content(space-around);
+	@include align-items(center);
+	padding: 0 0 0 50px;
+}
+.site-logo{
+	@include flex(1);
+}
+.ingenious-svg{
+	width:10%;
+	vertical-align: middle;
+}
+.site-title{
+	display:inline-block;
+	vertical-align:middle;
+}
+.site-name{
+	font-style: italic;
+	font-size: 1.7em;
+	line-height: 1.5;
+}
+.site-info{
+	@include flex(1);
+	text-align: right;
+}
+.link-swmg{
+	display:inline-block;
+	background:#222;
+	font-size: 12px;
+	padding: 35px 23px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 20px;
+	letter-spacing: 1px;
+	font-weight:600;
+	@include transition(.3s);
+
+	&:hover{
+		color:#ccc;
+	}
+}
+///
+.l-ingenious-intro{
+	margin-top: 70px;
+	@include clearfix;
+}
+.l-what{
+	margin-top:30px;
+}
+.char__item{
+	padding: 0 10px;
+}
+.char__box{
+	padding: 20px;
+	border: 1px solid #f3f3f3;
+	vertical-align: top;
+	@include border-radius(10px);
+	@include box-shadow(2px 2px 4px 0px rgba(0,0,0,0.05));
+	@include clearfix;
+	.desc{
+		line-height:1.4;
+	}
+}
+.l-signup{
+	margin-top:80px;
+}
+.signup__deets{
+	text-align:center;
+	padding: 20px;
+	.link{
+		font-size: 11px;
+		font-weight: 700;
+		line-height: 1.4em;
+		text-align: center;
+		letter-spacing: .22em;
+		padding: 17px 40px;
+		color: #fff;
+		text-transform: uppercase;
+		border:2px solid #fff;
+		background-color: #222;
+		display: inline-block;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+		@include transition(.3s);
+
+		&:hover{
+			border:2px solid #222;
+			background-color:#fff;
+			color:#222;
+		}
+	}
+}
+.l-how{
+	margin-top:70px;
+	padding: 70px 0 100px;
+	background: #f5f4f3;
+	@include clearfix;
+}
+.how__item{
+	text-align:center;
+
+	.icon{
+		margin: 0 auto;
+		width: 120px;
+		height: 120px;
+		background: #fffc;
+		padding: 30px;
+		border-radius: 50%;
+		@include box-shadow(1px 2px 4px rgba(0,0,0,.1));
+	}
+	.heading{
+		padding: 40px 20px 0;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.tagline{
+		margin-top: 10px;
+		padding: 0 20px;
+	}
+}
+.l-faq{
+	margin-top: 80px;
+   padding-bottom: 30px;
+	@include clearfix;
+
+	.row--last{
+		margin-top:20px;
+	}
+}
+.faq__item{
+	padding: 0 10px;
+}
+.faq__box{
+	padding: 20px;
+	border: 1px solid #f3f3f3;
+	vertical-align: top;
+	@include border-radius(10px);
+	@include box-shadow(2px 2px 4px 0px rgba(0,0,0,0.05));
+	@include clearfix;
+
+	.question{
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.answer{
+		margin-top: 10px;
+		line-height:1.4;
+	}
+}
+
+a.text-link{
+	text-decoration:underline;
+	font-weight:600;
+	@include transition(.3s);
+
+	@media (min-width:$screen-md-min){
+		&:hover{
+			color:lighten(#222, 20%);
+		}
+	}
+}

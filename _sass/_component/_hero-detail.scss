@@ -142,22 +142,4 @@
 		font-size:3em;
 	}
 }
-.l-ingenius-kv{
-	.hero-detail__wrap{
-		background: url('/common/images/pages/ingenius/ingenius_kv.jpg') no-repeat;
-		background-size: cover;
-		padding-bottom: 73%;
-		width: 100%;
-		position: relative;
 
-		@media (min-width:$screen-sm-min){
-			padding: 20% 10% 15%;
-			background-position:0;
-		}
-		@media (min-width:$screen-md-min){
-			padding-bottom: 10%;
-			background-position: 0;
-			background-attachment: fixed;
-		}
-	}
-}

@@ -57,7 +57,7 @@ ogImage: "ogImage"
 </head>
 <body class="is-{{fileName}} h-overflow-hidden">
   <!-- ///// SITE HEADER ///// -->
-  {{#compare fileName "!=" "schwab"}}
+  {{#compare hasGlobalNav "==" "yes"}}
   	{{> header }}
   {{/compare}}
   <!-- ///// END SITE HEADER ///// -->

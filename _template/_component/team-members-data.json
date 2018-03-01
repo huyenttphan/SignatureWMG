@@ -58,7 +58,7 @@
       {
         "id":"brian-walker",
         "name":"Brian Walker",
-        "position":"Operations Manager",
+        "position":"Operations and Compliance Manager",
         "pic":"brian_walker",
         "url":"",
         "para-1":"Brian Walker is a dedicated operations manager with over 20 years of experience in the financial services industry.  He prides himself on finding solutions to help advisors and support staff be successful and, in turn, assist their clients in reaching their financial goals.  He is responsible for operations, compliance, and HR functions at Signature Wealth Management Group.<span class='modal__break'></span>Brian has been both a financial advisor and operations manager during his career and has a deep understanding of both sides of the business.  He previously worked for Raymond James, Charles Schwab, and Ameriprise Financial.",
@@ -68,14 +68,5 @@
 
     "partners":
       [
-        {
-          "id":"stephanie",
-          "name":"Stephanie Platt",
-          "position":"Trusted Service Partner",
-          "pic":"stephanie",
-          "url":"",
-          "para-1":"Stephanie Platt began her career in Financial Services in 1992 with Prudential Insurance where she obtained her Life Insurance licenses. She graduated in 1994 with a Bachelor of Business Administration in Finance and Economics. Shortly after graduation, she accepted a position at Dean Witter Reynolds, assisting several top producers with sales and marketing. In spring of 1995, she was recruited by Vestax Corporation, a small Broker/Dealer, where she headed up their product division concentrating on Mutual Funds and Variable Annuities.<span class='modal__break'></span>In March 1997, she was presented with the opportunity to help develop a new RIA Corporation that focused on specific money management strategies for registered representatives to use with their clients. Once the securities department was fully functional, she transitioned into the retirement plans area, helping to develop a group annuity platform through ING Reliastar for use with 401k and 401a plans.",
-          "para-2":"Stephanie went on to hold positions as a Regional Sales Manager of an insurance marketing organization as well as Director of Sales and Product Development for a mid-size Broker Dealer.  In April 2007, she started Financial Services Outsourcing Solutions, Inc. which specializes in assisting Registered Investment Advisors with their back-office operations and marketing. In 2017, Stephanie joined our team to enhance our client service. Stephanie lives in Ohio with her family."
-        }
       ]
 }
